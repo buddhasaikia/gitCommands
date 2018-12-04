@@ -1,16 +1,17 @@
 # Git commands
-All day to day use Git commands I use
+Git command I use to streamline my daily job
 
-## setup user credential in git console (for all repository)
+### setup user credential in git console (for all repository)
 
 `git config --global user.email "you@example.com"`
 
 `git config --global user.name "your name"`
 
-setup user credential in git console (for single repository)
-------------------------------------------------------------
-git config user.email "you@example.com"
-git config user.name "your name"
+### setup user credential in git console (for single repository)
+
+`git config user.email "you@example.com"
+
+git config user.name "your name"`
 
 check username & email
 -----------------------
