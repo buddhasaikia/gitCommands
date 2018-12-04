@@ -117,66 +117,67 @@ Git command I use to streamline my daily job
 `git log -1`
 `git show`
 
-update local repository, overwrite all
-----------------------------------------
-git fetch --all
+### update local repository, overwrite all
 
-git pull origin master
+`git fetch --all`
 
-undo a conflict merge
------------------------
-git merge --abort
+`git pull origin master`
 
-list all tags
-----------------
-git tag
+### undo a conflict merge
 
-get list of conflicted files
------------------------------
-git diff --name-only --diff-filter=U
+`git merge --abort`
 
-Check whether the branch you are tracking is ahead, behind or has diverged
---------------------------------------------------------------------------
-git status -uno
+### list all tags
 
-display tags
--------------
-git tag
-git show <tagname>
+`git tag`
 
-delete tag
-------------
-git tag -d <tagname>
+### get list of conflicted files
 
-delete tag from remote
-----------------------
-git push origin -d <tagname>
+`git diff --name-only --diff-filter=U`
 
-checkout a tag
-----------------
-git checkout -b <branch name> <tag name>
+### Check whether the branch you are tracking is ahead, behind or has diverged
 
-track remote branch
---------------------
-git checkout --track origin/dev
+`git status -uno`
 
-show last commit message
--------------------------
-git log -1
+### display tags
 
-fatal: refuse to merge unrelated histories on every especially first pull request after remotely adding a git repo
---------------------------------------------------------------------------------------------------------------------
-git pull origin branchname --allow-unrelated-histories
+`git tag`
+`git show <tagname>`
 
-push new local repository to remote and track
----------------------------------------------
-git checkout -b feature_branch_name
-git push -u origin feature_branch_name
+### delete tag
 
-change last commit message (local)
------------------------------------
-git commit --amend
+`git tag -d <tagname>`
 
-undo git add .
-----------------
-git reset
+### delete tag from remote
+
+`git push origin -d <tagname>`
+
+### checkout a tag
+
+`git checkout -b <branch name> <tag name>`
+
+### track remote branch
+
+`git checkout --track origin/dev`
+
+### show last commit message
+
+`git log -1`
+
+### fatal: refuse to merge unrelated histories on every especially first pull request after remotely adding a git repo
+
+`git pull origin branchname --allow-unrelated-histories`
+
+### push new local repository to remote and track
+
+`git checkout -b feature_branch_name`
+
+`git push -u origin feature_branch_name`
+
+### change last commit message (local)
+
+`git commit --amend`
+
+### undo git add .
+
+`git reset`
