@@ -3,8 +3,9 @@ All day to day use Git commands I use
 
 ## setup user credential in git console (for all repository)
 
-`git config --global user.email "you@example.com"
-git config --global user.name "your name"`
+`git config --global user.email "you@example.com"`
+
+`git config --global user.name "your name"`
 
 setup user credential in git console (for single repository)
 ------------------------------------------------------------
