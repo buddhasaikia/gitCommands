@@ -7,17 +7,19 @@ Git command I use to streamline my daily job
 
 `git config --global user.name "your name"`
 
-### setup user credential in git console (for single repository)
+#### setup user credential in git console (for single repository)
 
-`git config user.email "you@example.com"
+`git config user.email "you@example.com"`
 
-git config user.name "your name"`
+`git config user.name "your name"`
 
-check username & email
------------------------
-git config --list
-git config user.name
-git config user.email
+**check username & email**
+
+`git config --list`
+
+`git config user.name`
+
+`git config user.email`
 
 show git remote repository
 ---------------------------
