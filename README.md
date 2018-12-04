@@ -1,6 +1,8 @@
 # Git commands
 Git command I use to streamline my daily job
 
+Git workflow- (link)[https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow]
+
 ### setup user credential in git console (for all repository)
 
 `git config --global user.email "you@example.com"`
