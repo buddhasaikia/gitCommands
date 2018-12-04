@@ -7,13 +7,13 @@ Git command I use to streamline my daily job
 
 `git config --global user.name "your name"`
 
-#### setup user credential in git console (for single repository)
+### setup user credential in git console (for single repository)
 
 `git config user.email "you@example.com"`
 
 `git config user.name "your name"`
 
-**check username & email**
+### check username & email
 
 `git config --list`
 
@@ -21,88 +21,101 @@ Git command I use to streamline my daily job
 
 `git config user.email`
 
-show git remote repository
----------------------------
-git remote -v
+### show git remote repository
+
+`git remote -v`
 
 
-create existing project to bitbucket for the first time
---------------------------------------------------------
-git init
-git add --all
-git commit -m "initial commit"
-git remote add origin https://username@your.bitbucket.domain:7999/yourproject/repo.git
-git push -u origin master
+### create existing project to bitbucket for the first time
 
-change remote url
------------------
-git remote set-url origin https://username@your.bitbucket.domain:7999/yourproject/repo.git
+`git init`
 
-swith to new remote branch & checkout
-----------------------------------------
-git fetch && git checkout development
+`git add --all`
 
-daily commit workflow
-----------------------
-git add .
-git commit -m "your message"
-git push origin development
-git tag v1.0.0_20170503 /git tag -a v1.0.0_20180423 -m "tag for release v1.0.0"
-git push origin --tags
+`git commit -m "initial commit"`
 
-create & switch branch
------------------------
-git checkout -b <branch_name>
+`git remote add origin https://username@your.bitbucket.domain:7999/yourproject/repo.git`
 
-merge branch & push to origin
--------------------------------
-git checkout development
-git merge firebase_crash_reporting
-git add .
-git commit -m "added firebase_crash_reporting"
-git push origin development
+`git push -u origin master`
 
-Revert all local uncommitted changes (should be executed in repo root):
-----------------------------------------------------------------------------------
-git checkout .
+### change remote url
 
-configure git mergetool
-----------------------------
-git config --global merge.tool meld
-git config --global mergetool.meld.path "C:\Program Files (x86)\Meld\Meld.exe" <- path to meld here
+`git remote set-url origin https://username@your.bitbucket.domain:7999/yourproject/repo.git`
 
-open git merge tool
-------------------------
-git mergetool
+### switch to new remote branch & checkout
 
-Remember to commit the merge-
-git commit -am 'merged from several branches'
+`git fetch && git checkout development`
 
-delete git tag
----------------
-git tag -d <tag_name>
+### daily commit workflow
 
-list all tags
-----------------
-git tag
+`git add .`
 
+`git commit -m "your message"`
 
-create git repo
--------------------
-git init
+`git push origin development`
 
-change remote url
--------------------
-git remote set-url origin git://new.url.here
+`git tag v1.0.0_20170503 /git tag -a v1.0.0_20180423 -m "tag for release v1.0.0"`
 
-show remote url
-------------------
-git remote show origin
+`git push origin --tags`
 
-show last commit
------------------
-git log -1
-git show
+### create & switch branch
+
+`git checkout -b <branch_name>`
+
+### merge branch & push to origin
+
+`git checkout development`
+
+`git merge firebase_crash_reporting`
+
+`git add .`
+
+`git commit -m "added firebase_crash_reporting"`
+
+`git push origin development`
+
+### Revert all local uncommitted changes (should be executed in repo root):
+
+`git checkout .`
+
+### configure git mergetool
+
+`git config --global merge.tool meld`
+
+`git config --global mergetool.meld.path "C:\Program Files (x86)\Meld\Meld.exe" <- path to meld here`
+
+### open git merge tool
+
+`git mergetool`
+
+### Remember to commit the merge-
+
+`git commit -am 'merged from several branches'`
+
+### delete git tag
+
+`git tag -d <tag_name>`
+
+### list all tags
+
+`git tag`
+
+### create git repo
+
+`git init`
+
+### change remote url
+
+`git remote set-url origin git://new.url.here`
+
+### show remote url
+
+`git remote show origin`
+
+### show last commit
+
+`git log -1`
+`git show`
 
 update local repository, overwrite all
 ----------------------------------------
