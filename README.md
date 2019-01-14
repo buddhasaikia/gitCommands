@@ -10,10 +10,24 @@ git config --global user.email "you@example.com"
 git config --global user.name "your name"
 ```
 
+### List global settings
+
+```
+$git config --global --list
+```
+
+### Reset global settings
+
+```
+git config --global --unset-all user.name
+git config --global --unset-all user.email
+```
+
+
 ### setup user credential in git console (for single repository)
 
 ```
-git config user.email "you@example.com"`
+git config user.email "you@example.com"
 git config user.name "your name"
 ```
 
