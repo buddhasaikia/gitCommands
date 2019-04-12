@@ -201,3 +201,14 @@ git push -u origin feature_branch_name
 ### undo git add .
 
 `git reset`
+
+### change last commit message (remote)
+
+In Intellij Idea you can do it so easy.
+
+Open Version Control (History)
+Select log tab
+Select commit to change comment
+press F2 (Mac fn + F2), and update your commit message
+
+`git push origin --force`
