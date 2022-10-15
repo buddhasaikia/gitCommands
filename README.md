@@ -63,6 +63,10 @@ git push origin --tags
 
 `git checkout -b <branch_name>`
 
+### publish local branch to remote
+
+`git push -u origin <branch_name>`
+
 ### merge branch & push to origin
 
 ```
