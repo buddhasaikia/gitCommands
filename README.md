@@ -54,6 +54,32 @@ git remote set-url origin https://username@your.bitbucket.domain:7999/yourprojec
 git fetch && git checkout development
 ```
 
+## Git tag
+
+### To create a simple (lightweight) tag
+
+```bash
+git tag v1.0.0
+```
+
+### To create an annotated tag
+
+```bash
+git tag -a v1.0.0 -m "Release version 1.0.0"
+```
+
+### To push the tag to GitHub
+
+```bash
+git push origin v1.0.0
+```
+
+### To push all tags at once
+
+```bash
+git push origin --tags
+```
+
 ## Daily Commit Workflow
 
 ```bash
