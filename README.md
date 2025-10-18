@@ -18,6 +18,13 @@ git config user.email "you@example.com"
 git config user.name "your name"
 ```
 
+## Remove Global User Credentials
+
+```bash
+git config --global --unset user.email
+git config --global --unset user.name
+```
+
 ## Check Username & Email
 
 ```bash
